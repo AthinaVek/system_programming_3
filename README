@@ -1,0 +1,15 @@
+ΕΡΓΑΣΙΑ 3
+ΑΘΗΝΑ ΒΕΚΡΑΚΗ
+1115201400020
+
+Ο webcreator εκτελέιται με την εντολή ./webcreator.sh  root_directory  text_file  w  p 
+και δημιουργει με τυχαία ονόματα όσα sites και pages ζητηθούν.
+
+Ο web server εκτελείται με την εντολή ./myhttpd  -­p  serving_port  -­c  command_port  -­t  num_of_threads  -­d  root_dir
+Δημιουργεί ένα thread pool με όσα threads ζητηθούν, και άλλα 2 threads απο τα οποία το ένα επικοινωνεί με
+τον web crawler και το άλλο δέχεται εντολές απο telnet. 
+
+Ο web crawler εκτελείται με την εντολή ./mycrawler  -­h  host_or_IP  -­p  port  -­c  command_port  -­t  num_of_threads  -­d  save_dir  starting_URL
+Δημιουργεί ένα thread pool με όσα threads ζητηθούν, και άλλο 1 thread απο το οποίο δέχεται εντολές απο telnet.
+
+Για την υλοποίηση της ουράς χρησιμοποιώ τα αρχεία QueueImplementation.c kai QueueInterface.h από προηγούμενη άσκηση.
